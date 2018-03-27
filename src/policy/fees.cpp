@@ -6,8 +6,10 @@
 #include <policy/fees.h>
 #include <policy/policy.h>
 
+#include <amount.h>
 #include <clientversion.h>
 #include <primitives/transaction.h>
+#include <random.h>
 #include <streams.h>
 #include <txmempool.h>
 #include <util.h>

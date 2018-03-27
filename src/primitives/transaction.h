@@ -13,6 +13,11 @@
 #include <uint256.h>
 
 static const int SERIALIZE_TRANSACTION_NO_WITNESS = 0x40000000;
+static const int SERIALIZE_BLOCK_LEGACY = 0x04000000;
+
+namespace Consensus {
+    struct Params;
+};
 
 /** An outpoint - a combination of a transaction hash and an index n into its vout */
 class COutPoint
@@ -158,6 +163,11 @@ public:
     bool IsNull() const
     {
         return (nValue == -1);
+    }
+
+    bool IsEmpty() const
+    {
+        return (nValue == 0 && scriptPubKey.empty());
     }
 
     friend bool operator==(const CTxOut& a, const CTxOut& b)

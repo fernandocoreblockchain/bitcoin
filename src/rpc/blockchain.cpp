@@ -11,6 +11,7 @@
 #include <checkpoints.h>
 #include <coins.h>
 #include <consensus/validation.h>
+#include <consensus/params.h>
 #include <validation.h>
 #include <core_io.h>
 #include <policy/feerate.h>
@@ -48,20 +49,18 @@ static CUpdatedBlock latestblock;
 
 extern void TxToJSON(const CTransaction& tx, const uint256 hashBlock, UniValue& entry);
 
-/* Calculate the difficulty for a given block index,
- * or the block index of the given chain.
- */
-double GetDifficulty(const CChain& chain, const CBlockIndex* blockindex)
+double GetDifficulty(const CBlockIndex* blockindex)
 {
     if (blockindex == nullptr)
     {
-        if (chain.Tip() == nullptr)
+        if (chainActive.Tip() == nullptr)
             return 1.0;
         else
-            blockindex = chain.Tip();
+            blockindex = chainActive.Tip();
     }
 
     int nShift = (blockindex->nBits >> 24) & 0xff;
+
     double dDiff =
         (double)0x0000ffff / (double)(blockindex->nBits & 0x00ffffff);
 
@@ -77,11 +76,6 @@ double GetDifficulty(const CChain& chain, const CBlockIndex* blockindex)
     }
 
     return dDiff;
-}
-
-double GetDifficulty(const CBlockIndex* blockindex)
-{
-    return GetDifficulty(chainActive, blockindex);
 }
 
 UniValue blockheaderToJSON(const CBlockIndex* blockindex)
@@ -110,6 +104,8 @@ UniValue blockheaderToJSON(const CBlockIndex* blockindex)
     CBlockIndex *pnext = chainActive.Next(blockindex);
     if (pnext)
         result.pushKV("nextblockhash", pnext->GetBlockHash().GetHex());
+
+    result.pushKV("flags", blockindex->IsProofOfStake()? "proof-of-stake" : "proof-of-work");
     return result;
 }
 
@@ -123,10 +119,12 @@ UniValue blockToJSON(const CBlock& block, const CBlockIndex* blockindex, bool tx
     if (chainActive.Contains(blockindex))
         confirmations = chainActive.Height() - blockindex->nHeight + 1;
     result.pushKV("confirmations", confirmations);
+    int flags = !block.IsNewFormatBlock() ? SERIALIZE_BLOCK_LEGACY : 0;
     result.pushKV("strippedsize", (int)::GetSerializeSize(block, SER_NETWORK, PROTOCOL_VERSION | SERIALIZE_TRANSACTION_NO_WITNESS));
     result.pushKV("size", (int)::GetSerializeSize(block, SER_NETWORK, PROTOCOL_VERSION));
     result.pushKV("weight", (int)::GetBlockWeight(block));
     result.pushKV("height", blockindex->nHeight);
+    result.pushKV("powHeight", blockindex->nPowHeight);
     result.pushKV("version", block.nVersion);
     result.pushKV("versionHex", strprintf("%08x", block.nVersion));
     result.pushKV("merkleroot", block.hashMerkleRoot.GetHex());
@@ -155,6 +153,13 @@ UniValue blockToJSON(const CBlock& block, const CBlockIndex* blockindex, bool tx
     CBlockIndex *pnext = chainActive.Next(blockindex);
     if (pnext)
         result.pushKV("nextblockhash", pnext->GetBlockHash().GetHex());
+
+    result.pushKV("flags", strprintf("%s%s", blockindex->IsProofOfStake()? "proof-of-stake" : "proof-of-work", blockindex->GeneratedStakeModifier()? " stake-modifier": ""));
+    result.pushKV("proofhash", blockindex->IsProofOfStake()? blockindex->hashProofOfStake.GetHex() : blockindex->GetBlockHash().GetHex());
+    result.pushKV("entropybit", (int)blockindex->GetStakeEntropyBit());
+    result.pushKV("modifier", strprintf("%016llx", blockindex->nStakeModifier));
+    result.pushKV("modifierchecksum", strprintf("%08x", blockindex->nStakeModifierChecksum));
+
     return result;
 }
 
