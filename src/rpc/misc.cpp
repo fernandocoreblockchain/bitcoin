@@ -33,6 +33,7 @@
 
 #include <univalue.h>
 
+
 UniValue validateaddress(const JSONRPCRequest& request)
 {
     if (request.fHelp || request.params.size() != 1)
