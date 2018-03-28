@@ -1271,7 +1271,910 @@
 
 ["Automatically generated test cases"],
 [
-    "0x47 0x304402200a5c6163f07b8d3b013c4d1d6dba25e780b39658d79ba37af7057a3b7f15ffa102201fd9b4eaa9943f734928b99a83592c2e7bf342ea2680f6a2bb705167966b742001",
+    "0x47 0x3044022003dc803d369048213f19d9633fc17cab899a64154cedff00553eabe786d5d0ce022039baf34079b6d409d6ac5efd139b01a69950e13c716fbb90c4dd2d861b92a4cb01",
+    "0x41 0x0479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8 CHECKSIG",
+    "",
+    "EVAL_FALSE",
+    "P2PK attempted replay attack with no reported forkid"
+],
+[
+    "0x47 0x30440220750533dab5b56f619631bbb17e7d4b249bbf0b413aafe525ed1c504f57ae9125022007b76978c876af58713c4b20f7eee0c30442b1c929bc5e895ed843aa4c93b19a01 0x21 0x038282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f51508",
+    "DUP HASH160 0x14 0x1018853670f9f3b0582c5b9ee8ce93764ac32b93 EQUALVERIFY CHECKSIG",
+    "",
+    "EVAL_FALSE",
+    "P2PKH attempted replay attack with no reported forkid"
+],
+[
+    "0x47 0x304402200cff31e6cd6143cd5c55cff07fced40d8cae92d42c61ffa240bcaa03140b38e60220041cc9f1dfe40ccff517bff9b1f86f3f96bf5f0e73256a3c7d1b601679881cba81",
+    "0x41 0x048282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f5150811f8a8098557dfe45e8256e830b60ace62d613ac2f7b17bed31b6eaff6e26caf CHECKSIG",
+    "",
+    "EVAL_FALSE",
+    "P2PK anyonecanpay attempted replay attack with no reported forkid"
+],
+[
+    "0x47 0x304402205d16d96f5ddedf062ec3d7f24d610346e82d04d53a8ac717f3ec7144733a4f0f022027291248d8de03021fb77e96f6e756669c9718ec49b69b15df70898db96c8dff01 0x23 0x210279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798ac",
+    "HASH160 0x14 0x23b0ad3477f2178bc0b3eed26e4e6316f4e83aa1 EQUAL",
+    "P2SH",
+    "EVAL_FALSE",
+    "P2SH(P2PK) attempted replay attack with no reported forkid"
+],
+[
+    "0x47 0x30440220292635cb68be95f8aafa19d1c452b8384284e9cca80571dd438218e545a96ad302203e282cfb0932b4610751f476d7c69abe090786a39daf177102051b3a0be7398501 0x41 0x0479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8 0x19 0x76a91491b24bf9f5288532960ac687abb035127b1d28a588ac",
+    "HASH160 0x14 0x7f67f0521934a57d3039f77f9f32cf313f3ac74b EQUAL",
+    "P2SH",
+    "EVAL_FALSE",
+    "P2SH(P2PKH) attempted replay attack with no reported forkid"
+],
+[
+    "0 0x47 0x30440220140a6b667c6819685325144cf6b01dd4db398744267293240b9506896b88858f022054f88b766141bb2d81faa7bcf7972d308abd950020a7044a30cb0cbafceab11101 0x47 0x304402201c15a2b5ced769f83d6b68bc95583b69d022209e45ce9ea9426aa2c177e3193602201a42219e95ecab4e31932a63b4c271e6008599f64d6cf28630964ee61113f9a301 0x47 0x30440220700e4f413a0e9f21605856c5fbb3c80f420cba5fdacdd42d8f0f29ccd72b233d0220720a10bfc40527a03aef4218bb506c08454da82be5fcf84991d26ba6b2062f8301",
+    "3 0x21 0x0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798 0x21 0x038282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f51508 0x21 0x03363d90d447b00c9c99ceac05b6262ee053441c7e55552ffe526bad8f83ff4640 3 CHECKMULTISIG",
+    "",
+    "EVAL_FALSE",
+    "3-of-3 attempted replay attack with no reported forkid"
+],
+[
+    "0 0x47 0x30440220450c74e12227c828d3b6cdbffad6b846dc696c252a041d88b3bdafdca112c1fa02205388fb8b4bb0ed5ed52cc45b82cdc853fe78d6d670ed63f0046445233e83037101 0x47 0x304402201b8363979a210e015ab11a80db2770a9a89f86f92d307a98a75b3a284bd8931b0220683f763882648d49b1f5b3391eab886a96c4331aee216ec6db1744f8b8ebc2e901 0x4c69 0x52210279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f8179821038282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f515082103363d90d447b00c9c99ceac05b6262ee053441c7e55552ffe526bad8f83ff464053ae",
+    "HASH160 0x14 0xc9e4a896d149702d0d1695434feddd52e24ad78d EQUAL",
+    "P2SH",
+    "EVAL_FALSE",
+    "P2SH(2-of-3) attempted replay attack with no reported forkid"
+],
+[
+    [
+        "304402204d5be7fb67c0f7536833fb2d9b5984fbfead196f9324a98222d02df4b169064f02207c24e5e726f6dce145c9656c492cb23e249ec938d63bbbe4fb6b21765f43fde801",
+        "410479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8ac",
+        0.00000001
+    ],
+    "",
+    "0 0x20 0xb95237b48faaa69eb078e1170be3b5cbb3fddf16d0a991e14ad274f7b33a4f64",
+    "P2SH,WITNESS",
+    "EVAL_FALSE",
+    "Basic P2WSH attempted replay attack with no reported forkid"
+],
+[
+    [
+        "30440220495b69979d14c09aa9a212ece9ee4ac7bf0595fdf06fd8cc537b9a7ca57d9d2c0220654fe1e0c1c829d76ebcb67c7e2f8e90754f6a26eb9ecdb9164818675f659d2201",
+        "0479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8",
+        0.00000001
+    ],
+    "",
+    "0 0x14 0x91b24bf9f5288532960ac687abb035127b1d28a5",
+    "P2SH,WITNESS",
+    "EVAL_FALSE",
+    "Basic P2WPKH attempted replay attack with no reported forkid"
+],
+[
+    [
+        "304402207500eaacb484181b96eb8ae3568256384eb72ebe99bfabccd0dc3888f3a9ee550220440606c4345cc5087dac539cabcc4928c584751c818cda04706abba4d33f1f8701",
+        "410479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8ac",
+        0.00000001
+    ],
+    "0x22 0x0020b95237b48faaa69eb078e1170be3b5cbb3fddf16d0a991e14ad274f7b33a4f64",
+    "HASH160 0x14 0xf386c2ba255cc56d20cfa6ea8b062f8b59945518 EQUAL",
+    "P2SH,WITNESS",
+    "EVAL_FALSE",
+    "Basic P2SH(P2WSH) attempted replay attack with no reported forkid"
+],
+[
+    [
+        "304402206bf1d9f51492e378bb1e8ff6af72dcc8e6c6f1f632bbf7d5138abf1d290e012602202aabd6fd5e271563bfa705a65445f92eb5b473eb5b3d20439c0a616d541f432101",
+        "0479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8",
+        0.00000001
+    ],
+    "0x16 0x001491b24bf9f5288532960ac687abb035127b1d28a5",
+    "HASH160 0x14 0x17743beb429c55c942d2ec703b98c4d57c2df5c6 EQUAL",
+    "P2SH,WITNESS",
+    "EVAL_FALSE",
+    "Basic P2SH(P2WPKH) attempted replay attack with no reported forkid"
+],
+[
+    [
+        "3044022052a3148003e8bbc23e00f19ebbc5716f67cb47c3864ad17db2e75f98c6c07abf022066e02b6fb79fe0644a1c4ee70ad59133e6790ac0a9ca50bf9f6c1ad5f796311201",
+        "210279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798ac",
+        0.00000001
+    ],
+    "",
+    "0 0x20 0x1863143c14c5166804bd19203356da136c985678cd4d27a1b8c6329604903262",
+    "P2SH,WITNESS,WITNESS_PUBKEYTYPE",
+    "EVAL_FALSE",
+    "Basic P2WSH with compressed key attempted replay attack with no reported forkid"
+],
+[
+    [
+        "3044022046024e9e98448b0cb4dee17e8e2e813b9de77906ad3c663b55c7d3f29fbda2e60220189addf167986798e8f59bb1a63c591e3292ac78575000d70026bcef3b234de801",
+        "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+        0.00000001
+    ],
+    "",
+    "0 0x14 0x751e76e8199196d454941c45d1b3a323f1433bd6",
+    "P2SH,WITNESS,WITNESS_PUBKEYTYPE",
+    "EVAL_FALSE",
+    "Basic P2WPKH with compressed key attempted replay attack with no reported forkid"
+],
+[
+    [
+        "304402203579f8ae33bd26b18cb45caef08e73903c424c0839041d4b5c770e959355a69a02201ce1606a96b49235534a0ce99e587ed74aa6d51bc46309fc267c9e040f83eaa201",
+        "210279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798ac",
+        0.00000001
+    ],
+    "0x22 0x00201863143c14c5166804bd19203356da136c985678cd4d27a1b8c6329604903262",
+    "HASH160 0x14 0xe4300531190587e3880d4c3004f5355d88ff928d EQUAL",
+    "P2SH,WITNESS,WITNESS_PUBKEYTYPE",
+    "EVAL_FALSE",
+    "Basic P2SH(P2WSH) with compressed key attempted replay attack with no reported forkid"
+],
+[
+    [
+        "304402200d0e1d03ca49c5a06435f3abac56b354c4f18c0aff0d5b0795c871cd2bc1021402200a57f48770b28363107852e8651529f767fde616e3960be2cc5e46460930bd5c01",
+        "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+        0.00000001
+    ],
+    "0x16 0x0014751e76e8199196d454941c45d1b3a323f1433bd6",
+    "HASH160 0x14 0xbcfeb728b584253d5f3f70bcb780e9ef218a68f4 EQUAL",
+    "P2SH,WITNESS,WITNESS_PUBKEYTYPE",
+    "EVAL_FALSE",
+    "Basic P2SH(P2WPKH) with compressed key attempted replay attack with no reported forkid"
+],
+[
+    [
+        "",
+        "3044022062803dcc9b346c6072171fb5f43435410ecb6875033a60c7a38c0c412eab341302202e683e0b18a07aec3dcd17583fdbf38c67d7517c0b2dde2b406a94c4e7295bb901",
+        "5121038282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f51508210279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f8179852ae",
+        0.00000001
+    ],
+    "",
+    "0 0x20 0x06c24420938f0fa3c1cb2707d867154220dca365cdbfa0dd2a83854730221460",
+    "P2SH,WITNESS,WITNESS_PUBKEYTYPE",
+    "EVAL_FALSE",
+    "P2WSH CHECKMULTISIG with compressed keys attempted replay attack with no reported forkid"
+],
+[
+    [
+        "",
+        "304402202d1528d4fd876d7f1ef1b470da6ef53f23a967a58644bcbb010326f4e8ea4e0a0220257eb6c91a6717b10672a7584192b1381ace18ac13795ce78057e3618737cbd701",
+        "5121038282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f51508210279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f8179852ae",
+        0.00000001
+    ],
+    "0x22 0x002006c24420938f0fa3c1cb2707d867154220dca365cdbfa0dd2a83854730221460",
+    "HASH160 0x14 0x26282aad7c29369d15fed062a778b6100d31a340 EQUAL",
+    "P2SH,WITNESS,WITNESS_PUBKEYTYPE",
+    "EVAL_FALSE",
+    "P2SH(P2WSH) CHECKMULTISIG with compressed keys attempted replay attack with no reported forkid"
+],
+[
+    [
+        "",
+        "30440220338e7c2d392040ce809284c379bbcbfc7fc56e9757ba54498bd140202e4c5b630220521d88c32bf2430450071eccf1251048d7946f386fce91a205e1db3ff4c2804d01",
+        "5121038282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f51508210279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f8179852ae",
+        0.00000001
+    ],
+    "",
+    "0 0x20 0x06c24420938f0fa3c1cb2707d867154220dca365cdbfa0dd2a83854730221460",
+    "P2SH,WITNESS,WITNESS_PUBKEYTYPE",
+    "EVAL_FALSE",
+    "P2WSH CHECKMULTISIG with compressed keys attempted replay attack with no reported forkid"
+],
+[
+    [
+        "",
+        "304402201b3d53d6807ad8319794db8e512f8ec36555d61b9a47ab43b40136528db0e6080220442ec3e8ed838f4a84fb463343a09ad561db76fe212df321783879af962d29d601",
+        "5121038282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f51508210279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f8179852ae",
+        0.00000001
+    ],
+    "0x22 0x002006c24420938f0fa3c1cb2707d867154220dca365cdbfa0dd2a83854730221460",
+    "HASH160 0x14 0x26282aad7c29369d15fed062a778b6100d31a340 EQUAL",
+    "P2SH,WITNESS,WITNESS_PUBKEYTYPE",
+    "EVAL_FALSE",
+    "P2SH(P2WSH) CHECKMULTISIG with compressed keys attempted replay attack with no reported forkid"
+],
+[
+    [
+        "",
+        "304402202352590cf6ad730c7e4c274b57b93d22d826c07169c4a142f3f95af460fb1058022015f3d830a9cc26a21157ed48612634baecc23feceb65aad6a2124f6c8ea6e5a101",
+        "5121038282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f51508410479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b852ae",
+        0.00000001
+    ],
+    "",
+    "0 0x20 0x08a6665ebfd43b02323423e764e185d98d1587f903b81507dbb69bfc41005efa",
+    "P2SH,WITNESS",
+    "EVAL_FALSE",
+    "P2WSH CHECKMULTISIG with first key uncompressed and signing with the first key attempted replay attack with no reported forkid"
+],
+[
+    [
+        "",
+        "3044022004a3006c4f9805edf29737562fb2f469bedc174b29a6545bf672f890282741d70220352bfb87862abbf6be4cb3ee881b7dc2412754535fc3eb8f48f0eaa6551c7efa01",
+        "5121038282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f51508410479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b852ae",
+        0.00000001
+    ],
+    "0x22 0x002008a6665ebfd43b02323423e764e185d98d1587f903b81507dbb69bfc41005efa",
+    "HASH160 0x14 0x6f5ecd4b83b77f3c438f5214eff96454934fc5d1 EQUAL",
+    "P2SH,WITNESS",
+    "EVAL_FALSE",
+    "P2SH(P2WSH) CHECKMULTISIG first key uncompressed and signing with the first key attempted replay attack with no reported forkid"
+],
+[
+    [
+        "",
+        "304402203b13efd9042bd6f8b0bea30447fb1a91cbda6886f9bf3d145f31668a736484cb022012cf6a2ecff33ffdf358b723ec2f1d223103b505d28fd6ce51c85d32965311fa01",
+        "5121038282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f51508410479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b852ae",
+        0.00000001
+    ],
+    "",
+    "0 0x20 0x08a6665ebfd43b02323423e764e185d98d1587f903b81507dbb69bfc41005efa",
+    "P2SH,WITNESS",
+    "EVAL_FALSE",
+    "P2WSH CHECKMULTISIG with first key uncompressed and signing with the second key attempted replay attack with no reported forkid"
+],
+[
+    [
+        "",
+        "30440220707c9c3a98935590159f5ca7041c145bd087338a38651bb1cd06b0d18a2906df022057eb3b1c66ec2a2b6dc84e90114ba871543f54ecf3de0735def8ee4942b73a9501",
+        "5121038282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f51508410479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b852ae",
+        0.00000001
+    ],
+    "0x22 0x002008a6665ebfd43b02323423e764e185d98d1587f903b81507dbb69bfc41005efa",
+    "HASH160 0x14 0x6f5ecd4b83b77f3c438f5214eff96454934fc5d1 EQUAL",
+    "P2SH,WITNESS",
+    "EVAL_FALSE",
+    "P2SH(P2WSH) CHECKMULTISIG with first key uncompressed and signing with the second key attempted replay attack with no reported forkid"
+],
+[
+    [
+        "",
+        "30440220739c77808a58d6ae1bece35fd914e7bae20634cd4e470eae231dad456689410b02201fcb13447ea3ecda7c0416de94b818367cacc02016dd650ef2ef994bab5dea2601",
+        "5141048282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f5150811f8a8098557dfe45e8256e830b60ace62d613ac2f7b17bed31b6eaff6e26caf210279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f8179852ae",
+        0.00000001
+    ],
+    "",
+    "0 0x20 0x230828ed48871f0f362ce9432aa52f620f442cc8d9ce7a8b5e798365595a38bb",
+    "P2SH,WITNESS",
+    "EVAL_FALSE",
+    "P2WSH CHECKMULTISIG with second key uncompressed and signing with the first key attempted replay attack with no reported forkid"
+],
+[
+    [
+        "",
+        "304402201020f8494e4685ab405ff3aa017110bcc5a395ec2cf1ada86f7bff96bdcc07040220614cf0da8896f6f9d83b734ac58f534082f68882e6f4ee8ee40697136781ace501",
+        "5141048282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f5150811f8a8098557dfe45e8256e830b60ace62d613ac2f7b17bed31b6eaff6e26caf210279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f8179852ae",
+        0.00000001
+    ],
+    "0x22 0x0020230828ed48871f0f362ce9432aa52f620f442cc8d9ce7a8b5e798365595a38bb",
+    "HASH160 0x14 0x3478e7019ce61a68148f87549579b704cbe4c393 EQUAL",
+    "P2SH,WITNESS",
+    "EVAL_FALSE",
+    "P2SH(P2WSH) CHECKMULTISIG second key uncompressed and signing with the first key attempted replay attack with no reported forkid"
+],
+[
+    [
+        "",
+        "30440220310cffe17d689e20b680cc2aaa314d02171cb3a512328b068de1e690ad42b96002203ace93f488b11c072a39435f8c98c34d07b5f7b076c10a564898e7ceebc6428501",
+        "5141048282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f5150811f8a8098557dfe45e8256e830b60ace62d613ac2f7b17bed31b6eaff6e26caf210279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f8179852ae",
+        0.00000001
+    ],
+    "",
+    "0 0x20 0x230828ed48871f0f362ce9432aa52f620f442cc8d9ce7a8b5e798365595a38bb",
+    "P2SH,WITNESS",
+    "EVAL_FALSE",
+    "P2WSH CHECKMULTISIG with second key uncompressed and signing with the second key attempted replay attack with no reported forkid"
+],
+[
+    [
+        "",
+        "3044022006fd89697850d5410da8175a5c0bb645c0e5f67fa2f0bdb6ccf914f79862f1ef02205ddb45305c47fcb755d2256ad772085497848f44dec7b2173719be6ee01200fc01",
+        "5141048282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f5150811f8a8098557dfe45e8256e830b60ace62d613ac2f7b17bed31b6eaff6e26caf210279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f8179852ae",
+        0.00000001
+    ],
+    "0x22 0x0020230828ed48871f0f362ce9432aa52f620f442cc8d9ce7a8b5e798365595a38bb",
+    "HASH160 0x14 0x3478e7019ce61a68148f87549579b704cbe4c393 EQUAL",
+    "P2SH,WITNESS",
+    "EVAL_FALSE",
+    "P2SH(P2WSH) CHECKMULTISIG with second key uncompressed and signing with the second key attempted replay attack with no reported forkid"
+],
+[
+    "0x47 0x304402205ff549e06fc7e9e7651af51af3e4f0c35e04e35e2c5029f392872f8532bb7bcc02206a4ace6f23b30658197b1c6eeafee4fe2b342ca5ef48d8b10e82d86259dc8b1641",
+    "0x41 0x0479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8 CHECKSIG",
+    "",
+    "EVAL_FALSE",
+    "P2PK attempted replay attack with an incorrect forkid"
+],
+[
+    "0x47 0x3044022045c2de416fd658e2e1ee70829cc98316a12eff084bc46ce32222fb5c5a60b1ae02206cde3793fb2073337a59b21ff4d22aeb78ed8c73570aaf6b2b91c2f09e87095041 0x21 0x038282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f51508",
+    "DUP HASH160 0x14 0x1018853670f9f3b0582c5b9ee8ce93764ac32b93 EQUALVERIFY CHECKSIG",
+    "",
+    "EVAL_FALSE",
+    "P2PKH attempted replay attack with an incorrect forkid"
+],
+[
+    "0x47 0x304402205ad076bf411969844dba28604beee45da131995cdc4d1aeacf240b90701c1f52022066fc751adc13c44eec6ad1ae445bcc812d5823dd18dbcc416f554199cc212b31c1",
+    "0x41 0x048282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f5150811f8a8098557dfe45e8256e830b60ace62d613ac2f7b17bed31b6eaff6e26caf CHECKSIG",
+    "",
+    "EVAL_FALSE",
+    "P2PK anyonecanpay attempted replay attack with an incorrect forkid"
+],
+[
+    "0x47 0x3044022008a51e4c257b98657a4b32e46aea8e78b7a1fd542b97011a32b235d0c0e9025b02207684132249d86ebc7b6f0e780a4e1ae900d354629481d314c728c1fa7b9f60ec41 0x23 0x210279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798ac",
+    "HASH160 0x14 0x23b0ad3477f2178bc0b3eed26e4e6316f4e83aa1 EQUAL",
+    "P2SH",
+    "EVAL_FALSE",
+    "P2SH(P2PK) attempted replay attack with an incorrect forkid"
+],
+[
+    "0x47 0x30440220161cfaf9e75a1301637efe33f2bd41c6742bd276fafd2b64775afdaa6dabc9c3022052f7b0a3f5a0c7c1a348412912133fc94fb44135afe8fbadfae0245653eabcc441 0x41 0x0479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8 0x19 0x76a91491b24bf9f5288532960ac687abb035127b1d28a588ac",
+    "HASH160 0x14 0x7f67f0521934a57d3039f77f9f32cf313f3ac74b EQUAL",
+    "P2SH",
+    "EVAL_FALSE",
+    "P2SH(P2PKH) attempted replay attack with an incorrect forkid"
+],
+[
+    "0 0x47 0x30440220182d3589f93adda7bcba08042a54c778f3da8708efdff3c7acb9efaae15c1580022066c47e2adeeaab1339fb3a0af9886ff6da9c88a58f05fdcf7dc8106016d4848241 0x47 0x30440220098c357baaffd195ab33ffa16a9227e68e779440962bcc2c6536542597139cd3022058487e1dd1e285f0307d6e8eecdbde15ebb78e5b638fc0e7dd3cb37d6b9db16941 0x47 0x304402200317f8a3d966033a5a21be6a5d15f7124555c331016d472f851e04c68c90c0e202205248535fab402a2c36a4e6fb84d0d83eb9b14f1949e598199b0a17815dd89aaa41",
+    "3 0x21 0x0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798 0x21 0x038282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f51508 0x21 0x03363d90d447b00c9c99ceac05b6262ee053441c7e55552ffe526bad8f83ff4640 3 CHECKMULTISIG",
+    "",
+    "EVAL_FALSE",
+    "3-of-3 attempted replay attack with an incorrect forkid"
+],
+[
+    "0 0x47 0x304402202258ee098c7f3b9c61ec4b973c8a7a1d52e9539977e3d8f228622aa449ce7b8f022002c6b2eb34c0f1e504299575e4b6e26851f841c5fef065f16fdc36a1d300eb0841 0x47 0x3044022064d1607bc2d00d8faa706240940293017698f281fd02ce10dad08130f50e5157022036b27d82580e132dec99aaa681be2ed152ca35414c54970f4a486c56705ff0ad41 0x4c69 0x52210279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f8179821038282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f515082103363d90d447b00c9c99ceac05b6262ee053441c7e55552ffe526bad8f83ff464053ae",
+    "HASH160 0x14 0xc9e4a896d149702d0d1695434feddd52e24ad78d EQUAL",
+    "P2SH",
+    "EVAL_FALSE",
+    "P2SH(2-of-3) attempted replay attack with an incorrect forkid"
+],
+[
+    [
+        "304402200c63a6ff605e070e58dfc1d10abe53a6608f5172b01d82afe281f2eb794049c502207bd18f13fbef81a48e6e582e7df27f980a4aa5c3ca1d241e9ba239796611162641",
+        "410479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8ac",
+        0.00000001
+    ],
+    "",
+    "0 0x20 0xb95237b48faaa69eb078e1170be3b5cbb3fddf16d0a991e14ad274f7b33a4f64",
+    "P2SH,WITNESS",
+    "EVAL_FALSE",
+    "Basic P2WSH attempted replay attack with an incorrect forkid"
+],
+[
+    [
+        "3044022010b676cca562b9436b2ce388b51a5fe5716ccdbc3881075ac3db406481fd6053022025fa64e051c1c85752a96779e2fa9b8dd08ef2314a558fd964b88e1b393e6a4241",
+        "0479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8",
+        0.00000001
+    ],
+    "",
+    "0 0x14 0x91b24bf9f5288532960ac687abb035127b1d28a5",
+    "P2SH,WITNESS",
+    "EVAL_FALSE",
+    "Basic P2WPKH attempted replay attack with an incorrect forkid"
+],
+[
+    [
+        "30440220030388557a559efefae3a1fcf412a2772cb9c1c8d5be7a0946bd8b5d5040596902206b5f0d981f4800b369ff81ed308fb4a4b972d1d252334a096faf5c6915bb2d5f41",
+        "410479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8ac",
+        0.00000001
+    ],
+    "0x22 0x0020b95237b48faaa69eb078e1170be3b5cbb3fddf16d0a991e14ad274f7b33a4f64",
+    "HASH160 0x14 0xf386c2ba255cc56d20cfa6ea8b062f8b59945518 EQUAL",
+    "P2SH,WITNESS",
+    "EVAL_FALSE",
+	"Basic P2SH(P2WSH) attempted replay attack with an incorrect forkid"
+],
+[
+    [
+        "3044022025ecca4521af440d58fe942bb8033904b98a7d9f9c53aafbd33ccf26c873d9c902202119d3b6083d31d7f340ac7ebb5da140dbc0821e9cf812ea73c91ca7069aaf2041",
+        "0479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8",
+        0.00000001
+    ],
+    "0x16 0x001491b24bf9f5288532960ac687abb035127b1d28a5",
+    "HASH160 0x14 0x17743beb429c55c942d2ec703b98c4d57c2df5c6 EQUAL",
+    "P2SH,WITNESS",
+    "EVAL_FALSE",
+    "Basic P2SH(P2WPKH) attempted replay attack with an incorrect forkid"
+],
+[
+    [
+        "30440220670dba3dd0c019731c63b792d5ca7e5e24c656d9dfc27aa69e046ce8ccb476e702207901e29d8a50412eb1cc82a984765e9da3719c989c29474f055706bfe6b1b52041",
+        "210279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798ac",
+        0.00000001
+    ],
+    "",
+    "0 0x20 0x1863143c14c5166804bd19203356da136c985678cd4d27a1b8c6329604903262",
+    "P2SH,WITNESS,WITNESS_PUBKEYTYPE",
+    "EVAL_FALSE",
+    "Basic P2WSH with compressed key attempted replay attack with an incorrect forkid"
+],
+[
+    [
+        "30440220690687318fe287360af2064a2a79182221d82e8bfc74f0eed2ae9a1a2b1cf9a20220257c6807e79ee4d02138666a5de972e3e7c5c319fe79eb9863915e8259b978aa41",
+        "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+        0.00000001
+    ],
+    "",
+    "0 0x14 0x751e76e8199196d454941c45d1b3a323f1433bd6",
+    "P2SH,WITNESS,WITNESS_PUBKEYTYPE",
+    "EVAL_FALSE",
+    "Basic P2WPKH with compressed key attempted replay attack with an incorrect forkid"
+],
+[
+    [
+        "3044022078232d6b2e0339f7a0d3eaf799a680dfc6143d4f57bd1acc30d0999c191a43000220273da5292b55245340a3d13b60c8f57aa2d05b4dfa227c22bda45f6003796bee41",
+        "210279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798ac",
+        0.00000001
+    ],
+    "0x22 0x00201863143c14c5166804bd19203356da136c985678cd4d27a1b8c6329604903262",
+    "HASH160 0x14 0xe4300531190587e3880d4c3004f5355d88ff928d EQUAL",
+    "P2SH,WITNESS,WITNESS_PUBKEYTYPE",
+    "EVAL_FALSE",
+    "Basic P2SH(P2WSH) with compressed key attempted replay attack with an incorrect forkid"
+],
+[
+    [
+        "304402202a3003809ed7ca664d410442060863d15707563a3844f8968f62a016021d491e02206604d9a5f2c15a471bddfb4f9427f86d49144fff6024f0b580c3969e3efe1d5a41",
+        "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+        0.00000001
+    ],
+    "0x16 0x0014751e76e8199196d454941c45d1b3a323f1433bd6",
+    "HASH160 0x14 0xbcfeb728b584253d5f3f70bcb780e9ef218a68f4 EQUAL",
+    "P2SH,WITNESS,WITNESS_PUBKEYTYPE",
+    "EVAL_FALSE",
+    "Basic P2SH(P2WPKH) with compressed key attempted replay attack with an incorrect forkid"
+],
+[
+    [
+        "",
+        "30440220784fed323722ada5fc99b1bc6dcef37a14c7391430269b87c84d82af8789e1b802204cc0a87034061ddda72d2f06d8a43ba7c7e8a0fba7eb21c8150d4eac342303b341",
+        "5121038282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f51508210279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f8179852ae",
+        0.00000001
+    ],
+    "",
+    "0 0x20 0x06c24420938f0fa3c1cb2707d867154220dca365cdbfa0dd2a83854730221460",
+    "P2SH,WITNESS,WITNESS_PUBKEYTYPE",
+    "EVAL_FALSE",
+    "P2WSH CHECKMULTISIG with compressed keys attempted replay attack with an incorrect forkid"
+],
+[
+    [
+        "",
+        "304402200bbd6a179ff87178a08e07b2245f0ec7074843c81b5ac3b7b7b96b8f3263215202203e04a17b0330811e7b84acaadfec7582327c273ee396efac1bd9ac7c8aff933141",
+        "5121038282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f51508210279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f8179852ae",
+        0.00000001
+    ],
+    "0x22 0x002006c24420938f0fa3c1cb2707d867154220dca365cdbfa0dd2a83854730221460",
+    "HASH160 0x14 0x26282aad7c29369d15fed062a778b6100d31a340 EQUAL",
+    "P2SH,WITNESS,WITNESS_PUBKEYTYPE",
+    "EVAL_FALSE",
+    "P2SH(P2WSH) CHECKMULTISIG with compressed keys attempted replay attack with an incorrect forkid"
+],
+[
+    [
+        "",
+        "3044022060beccdb2375030437090955a5e059dc6dbaa91b3cf9d1cdea88ad7245c8b2f3022018d73e0c6a016ed8400bac28a97edf04744c1d1ebeb7dfb8cf874f751aa03bfb41",
+        "5121038282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f51508210279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f8179852ae",
+        0.00000001
+    ],
+    "",
+    "0 0x20 0x06c24420938f0fa3c1cb2707d867154220dca365cdbfa0dd2a83854730221460",
+    "P2SH,WITNESS,WITNESS_PUBKEYTYPE",
+    "EVAL_FALSE",
+    "P2WSH CHECKMULTISIG with compressed keys attempted replay attack with an incorrect forkid"
+],
+[
+    [
+        "",
+        "3044022064f01a536d57d171c3ca91ed92a322af751c53b59d0a6479cf7ea65485534fd7022057619303a930b5cbddb3fa864e39ce1fe4226814279eb04eb54627a909348c0241",
+        "5121038282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f51508210279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f8179852ae",
+        0.00000001
+    ],
+    "0x22 0x002006c24420938f0fa3c1cb2707d867154220dca365cdbfa0dd2a83854730221460",
+    "HASH160 0x14 0x26282aad7c29369d15fed062a778b6100d31a340 EQUAL",
+    "P2SH,WITNESS,WITNESS_PUBKEYTYPE",
+    "EVAL_FALSE",
+    "P2SH(P2WSH) CHECKMULTISIG with compressed keys attempted replay attack with an incorrect forkid"
+],
+[
+    [
+        "",
+        "304402203860e48a00f1af2541f46b11b41cfac0fdfab4a66a5d59c79042495f8cfc7f2402203569fd25454c73a6f91756f44e208cb64784cea2ae1592e9b46693485527edc241",
+        "5121038282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f51508410479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b852ae",
+        0.00000001
+    ],
+    "",
+    "0 0x20 0x08a6665ebfd43b02323423e764e185d98d1587f903b81507dbb69bfc41005efa",
+    "P2SH,WITNESS",
+    "EVAL_FALSE",
+    "P2WSH CHECKMULTISIG with first key uncompressed and signing with the first key attempted replay attack with an incorrect forkid"
+],
+[
+    [
+        "",
+        "3044022024ff5e2ca0125880ed94699cbe3e56ac113044dd3ed5eb748d7d8db9270f3de6022076fdb9326cee25655be2c8dafe8ea5edb29456e7ced2b35c7e8539eed268111841",
+        "5121038282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f51508410479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b852ae",
+        0.00000001
+    ],
+    "0x22 0x002008a6665ebfd43b02323423e764e185d98d1587f903b81507dbb69bfc41005efa",
+    "HASH160 0x14 0x6f5ecd4b83b77f3c438f5214eff96454934fc5d1 EQUAL",
+    "P2SH,WITNESS",
+    "EVAL_FALSE",
+    "P2SH(P2WSH) CHECKMULTISIG first key uncompressed and signing with the first key attempted replay attack with an incorrect forkid"
+],
+[
+    [
+        "",
+        "30440220749df6740a95bfc9b98423622697ef5885372a837a323dac125aa7514bff6bae02206bbfa06b2873fc70c5b3e59a4756519600c8aca09431a7ba783cdc4c4a8af1fe41",
+        "5121038282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f51508410479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b852ae",
+        0.00000001
+    ],
+    "",
+    "0 0x20 0x08a6665ebfd43b02323423e764e185d98d1587f903b81507dbb69bfc41005efa",
+    "P2SH,WITNESS",
+    "EVAL_FALSE",
+    "P2WSH CHECKMULTISIG with first key uncompressed and signing with the second key attempted replay attack with an incorrect forkid"
+],
+[
+    [
+        "",
+        "30440220035bf3a4bc1bfd6c3f0e6a7013cff3c3e77fd7367a64adc10f0c60f4bbae5184022041780b415ca1776cff2e5254a7904ab0ff00e0dfdd89fd863cfce55e111420cc41",
+        "5121038282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f51508410479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b852ae",
+        0.00000001
+    ],
+    "0x22 0x002008a6665ebfd43b02323423e764e185d98d1587f903b81507dbb69bfc41005efa",
+    "HASH160 0x14 0x6f5ecd4b83b77f3c438f5214eff96454934fc5d1 EQUAL",
+    "P2SH,WITNESS",
+    "EVAL_FALSE",
+    "P2SH(P2WSH) CHECKMULTISIG with first key uncompressed and signing with the second key attempted replay attack with an incorrect forkid"
+],
+[
+    [
+        "",
+        "304402206c4ddcc64db6199195598ef75526c4aaa3060d3036fb46ee63d21f64bd0f7cf30220666f1247482233f98d8aaed961ec76ef760e8bc03cac21480a4426ef9eba501641",
+        "5141048282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f5150811f8a8098557dfe45e8256e830b60ace62d613ac2f7b17bed31b6eaff6e26caf210279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f8179852ae",
+        0.00000001
+    ],
+    "",
+    "0 0x20 0x230828ed48871f0f362ce9432aa52f620f442cc8d9ce7a8b5e798365595a38bb",
+    "P2SH,WITNESS",
+    "EVAL_FALSE",
+    "P2WSH CHECKMULTISIG with second key uncompressed and signing with the first key attempted replay attack with an incorrect forkid"
+],
+[
+    [
+        "",
+        "3044022017206e850d9ffb1678bee9c76272ef0e82c50951cad55d56b593968180ecb0fc02205cb0aeee442a4bdc69c0e647deeb4a364e010237b6251b72a4a0826ecbdae38541",
+        "5141048282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f5150811f8a8098557dfe45e8256e830b60ace62d613ac2f7b17bed31b6eaff6e26caf210279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f8179852ae",
+        0.00000001
+    ],
+    "0x22 0x0020230828ed48871f0f362ce9432aa52f620f442cc8d9ce7a8b5e798365595a38bb",
+    "HASH160 0x14 0x3478e7019ce61a68148f87549579b704cbe4c393 EQUAL",
+    "P2SH,WITNESS",
+    "EVAL_FALSE",
+    "P2SH(P2WSH) CHECKMULTISIG second key uncompressed and signing with the first key attempted replay attack with an incorrect forkid"
+],
+[
+    [
+        "",
+        "304402206e01df64a2e29080c84d0338493bf9a28f361ed9daaec42115bedbb43ee8816002206beed88b0eb528b5cbd171b7962ea7973410f1cbc350940a6280013851df15a841",
+        "5141048282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f5150811f8a8098557dfe45e8256e830b60ace62d613ac2f7b17bed31b6eaff6e26caf210279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f8179852ae",
+        0.00000001
+    ],
+    "",
+    "0 0x20 0x230828ed48871f0f362ce9432aa52f620f442cc8d9ce7a8b5e798365595a38bb",
+    "P2SH,WITNESS",
+    "EVAL_FALSE",
+    "P2WSH CHECKMULTISIG with second key uncompressed and signing with the second key attempted replay attack with an incorrect forkid"
+],
+[
+    [
+        "",
+        "304402206a23eb2ff06bc708759d557be07557c4d7ed7871c64de0b91e2e8952ea3d2f9602204aebc51d77dde743fe04165ee4dcb87ac4fd49c592ad57d20d807930a112425d41",
+        "5141048282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f5150811f8a8098557dfe45e8256e830b60ace62d613ac2f7b17bed31b6eaff6e26caf210279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f8179852ae",
+        0.00000001
+    ],
+    "0x22 0x0020230828ed48871f0f362ce9432aa52f620f442cc8d9ce7a8b5e798365595a38bb",
+    "HASH160 0x14 0x3478e7019ce61a68148f87549579b704cbe4c393 EQUAL",
+    "P2SH,WITNESS",
+    "EVAL_FALSE",
+    "P2SH(P2WSH) CHECKMULTISIG with second key uncompressed and signing with the second key attempted replay attack with an incorrect forkid"
+],
+[
+    "0x47 0x304402200a5c6163f07b8d3b013c4d1d6dba25e780b39658d79ba37af7057a3b7f15ffa102201fd9b4eaa9943f734928b99a83592c2e7bf342ea2680f6a2bb705167966b742041",
+    "0x41 0x0479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8 CHECKSIG",
+    "",
+    "EVAL_FALSE",
+    "P2PK attempted replay attack with reported forkid, but unset hashtype"
+],
+[
+    "0x47 0x304402206e05a6fe23c59196ffe176c9ddc31e73a9885638f9d1328d47c0c703863b8876022076feb53811aa5b04e0e79f938eb19906cc5e67548bc555a8e8b8b0fc603d840c41 0x21 0x038282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f51508",
+    "DUP HASH160 0x14 0x1018853670f9f3b0582c5b9ee8ce93764ac32b93 EQUALVERIFY CHECKSIG",
+    "",
+    "EVAL_FALSE",
+    "P2PKH attempted replay attack with reported forkid, but unset hashtype"
+],
+[
+    "0x47 0x304402204710a85181663b32d25c70ec2bbd14adff5ddfff6cb50d09e155ef5f541fc86c0220056b0cc949be9386ecc5f6c2ac0493269031dbb185781db90171b54ac1277902c1",
+    "0x41 0x048282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f5150811f8a8098557dfe45e8256e830b60ace62d613ac2f7b17bed31b6eaff6e26caf CHECKSIG",
+    "",
+    "EVAL_FALSE",
+    "P2PK anyonecanpay attempted replay attack with reported forkid, but unset hashtype"
+],
+[
+    "0x47 0x3044022003fef42ed6c7be8917441218f525a60e2431be978e28b7aca4d7a532cc413ae8022067a1f82c74e8d69291b90d148778405c6257bbcfc2353cc38a3e1f22bf44254641 0x23 0x210279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798ac",
+    "HASH160 0x14 0x23b0ad3477f2178bc0b3eed26e4e6316f4e83aa1 EQUAL",
+    "P2SH",
+    "EVAL_FALSE",
+    "P2SH(P2PK) attempted replay attack with reported forkid, but unset hashtype"
+],
+[
+    "0x47 0x30440220781ba4f59a7b207a10db87628bc2168df4d59b844b397d2dbc9a5835fb2f2b7602206ed8fbcc1072fe2dfc5bb25909269e5dc42ffcae7ec2bc81d59692210ff30c2b41 0x41 0x0479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8 0x19 0x76a91491b24bf9f5288532960ac687abb035127b1d28a588ac",
+    "HASH160 0x14 0x7f67f0521934a57d3039f77f9f32cf313f3ac74b EQUAL",
+    "P2SH",
+    "EVAL_FALSE",
+    "P2SH(P2PKH) attempted replay attack with reported forkid, but unset hashtype"
+],
+[
+    "0 0x47 0x3044022051254b9fb476a52d85530792b578f86fea70ec1ffb4393e661bcccb23d8d63d3022076505f94a403c86097841944e044c70c2045ce90e36de51f7e9d3828db98a07541 0x47 0x304402200a358f750934b3feb822f1966bfcd8bbec9eeaa3a8ca941e11ee5960e181fa01022050bf6b5a8e7750f70354ae041cb68a7bade67ec6c3ab19eb359638974410626e41 0x47 0x304402200955d031fff71d8653221e85e36c3c85533d2312fc3045314b19650b7ae2f81002202a6bb8505e36201909d0921f01abff390ae6b7ff97bbf959f98aedeb0a56730941",
+    "3 0x21 0x0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798 0x21 0x038282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f51508 0x21 0x03363d90d447b00c9c99ceac05b6262ee053441c7e55552ffe526bad8f83ff4640 3 CHECKMULTISIG",
+    "",
+    "EVAL_FALSE",
+    "3-of-3 attempted replay attack with reported forkid, but unset hashtype"
+],
+[
+    "0 0x47 0x304402205b7d2c2f177ae76cfbbf14d589c113b0b35db753d305d5562dd0b61cbf366cfb02202e56f93c4f08a27f986cd424ffc48a462c3202c4902104d4d0ff98ed28f4bf8041 0x47 0x30440220563e5b3b1fc11662a84bc5ea2a32cc3819703254060ba30d639a1aaf2d5068ad0220601c1f47ddc76d93284dd9ed68f7c9974c4a0ea7cbe8a247d6bc3878567a5fca41 0x4c69 0x52210279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f8179821038282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f515082103363d90d447b00c9c99ceac05b6262ee053441c7e55552ffe526bad8f83ff464053ae",
+    "HASH160 0x14 0xc9e4a896d149702d0d1695434feddd52e24ad78d EQUAL",
+    "P2SH",
+    "EVAL_FALSE",
+    "P2SH(2-of-3) attempted replay attack with reported forkid, but unset hashtype"
+],
+[
+    [
+        "304402200d461c140cfdfcf36b94961db57ae8c18d1cb80e9d95a9e47ac22470c1bf125502201c8dc1cbfef6a3ef90acbbb992ca22fe9466ee6f9d4898eda277a7ac3ab4b25141",
+        "410479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8ac",
+        0.00000001
+    ],
+    "",
+    "0 0x20 0xb95237b48faaa69eb078e1170be3b5cbb3fddf16d0a991e14ad274f7b33a4f64",
+    "P2SH,WITNESS",
+    "EVAL_FALSE",
+    "Basic P2WSH attempted replay attack with reported forkid, but unset hashtype"
+],
+[
+    [
+        "304402201e7216e5ccb3b61d46946ec6cc7e8c4e0117d13ac2fd4b152197e4805191c74202203e9903e33e84d9ee1dd13fb057afb7ccfb47006c23f6a067185efbc9dd780fc541",
+        "0479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8",
+        0.00000001
+    ],
+    "",
+    "0 0x14 0x91b24bf9f5288532960ac687abb035127b1d28a5",
+    "P2SH,WITNESS",
+    "EVAL_FALSE",
+    "Basic P2WPKH attempted replay attack with reported forkid, but unset hashtype"
+],
+[
+    [
+        "3044022066e02c19a513049d49349cf5311a1b012b7c4fae023795a18ab1d91c23496c22022025e216342c8e07ce8ef51e8daee88f84306a9de66236cab230bb63067ded1ad341",
+        "410479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8ac",
+        0.00000001
+    ],
+    "0x22 0x0020b95237b48faaa69eb078e1170be3b5cbb3fddf16d0a991e14ad274f7b33a4f64",
+    "HASH160 0x14 0xf386c2ba255cc56d20cfa6ea8b062f8b59945518 EQUAL",
+    "P2SH,WITNESS",
+    "EVAL_FALSE",
+    "Basic P2SH(P2WSH) attempted replay attack with reported forkid, but unset hashtype"
+],
+[
+    [
+        "304402200929d11561cd958460371200f82e9cae64c727a495715a31828e27a7ad57b36d0220361732ced04a6f97351ecca21a56d0b8cd4932c1da1f8f569a2b68e5e48aed7841",
+        "0479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8",
+        0.00000001
+    ],
+    "0x16 0x001491b24bf9f5288532960ac687abb035127b1d28a5",
+    "HASH160 0x14 0x17743beb429c55c942d2ec703b98c4d57c2df5c6 EQUAL",
+    "P2SH,WITNESS",
+    "EVAL_FALSE",
+    "Basic P2SH(P2WPKH) attempted replay attack with reported forkid, but unset hashtype"
+],
+[
+    [
+        "304402204256146fcf8e73b0fd817ffa2a4e408ff0418ff987dd08a4f485b62546f6c43c02203f3c8c3e2febc051e1222867f5f9d0eaf039d6792911c10940aa3cc74123378e41",
+        "210279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798ac",
+        0.00000001
+    ],
+    "",
+    "0 0x20 0x1863143c14c5166804bd19203356da136c985678cd4d27a1b8c6329604903262",
+    "P2SH,WITNESS,WITNESS_PUBKEYTYPE",
+    "EVAL_FALSE",
+    "Basic P2WSH with compressed key attempted replay attack with reported forkid, but unset hashtype"
+],
+[
+    [
+        "304402204edf27486f11432466b744df533e1acac727e0c83e5f912eb289a3df5bf8035f022075809fdd876ede40ad21667eba8b7e96394938f9c9c50f11b6a1280cce2cea8641",
+        "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+        0.00000001
+    ],
+    "",
+    "0 0x14 0x751e76e8199196d454941c45d1b3a323f1433bd6",
+    "P2SH,WITNESS,WITNESS_PUBKEYTYPE",
+    "EVAL_FALSE",
+    "Basic P2WPKH with compressed key attempted replay attack with reported forkid, but unset hashtype"
+],
+[
+    [
+        "304402203a549090cc46bce1e5e95c4922ea2c12747988e0207b04c42f81cdbe87bb1539022050f57a245b875fd5119c419aaf050bcdf41384f0765f04b809e5bced1fe7093d41",
+        "210279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798ac",
+        0.00000001
+    ],
+    "0x22 0x00201863143c14c5166804bd19203356da136c985678cd4d27a1b8c6329604903262",
+    "HASH160 0x14 0xe4300531190587e3880d4c3004f5355d88ff928d EQUAL",
+    "P2SH,WITNESS,WITNESS_PUBKEYTYPE",
+    "EVAL_FALSE",
+    "Basic P2SH(P2WSH) with compressed key attempted replay attack with reported forkid, but unset hashtype"
+],
+[
+    [
+        "304402201bc0d53046827f4a35a3166e33e3b3366c4085540dc383b95d21ed2ab11e368a0220333e78c6231214f5f8e59621e15d7eeab0d4e4d0796437e00bfbd2680c5f9c1741",
+        "0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798",
+        0.00000001
+    ],
+    "0x16 0x0014751e76e8199196d454941c45d1b3a323f1433bd6",
+    "HASH160 0x14 0xbcfeb728b584253d5f3f70bcb780e9ef218a68f4 EQUAL",
+    "P2SH,WITNESS,WITNESS_PUBKEYTYPE",
+    "EVAL_FALSE",
+    "Basic P2SH(P2WPKH) with compressed key attempted replay attack with reported forkid, but unset hashtype"
+],
+[
+    [
+        "",
+        "304402207eb8a59b5c65fc3f6aeef77066556ed5c541948a53a3ba7f7c375b8eed76ee7502201e036a7a9a98ff919ff94dc905d67a1ec006f79ef7cff0708485c8bb79dce38e41",
+        "5121038282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f51508210279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f8179852ae",
+        0.00000001
+    ],
+    "",
+    "0 0x20 0x06c24420938f0fa3c1cb2707d867154220dca365cdbfa0dd2a83854730221460",
+    "P2SH,WITNESS,WITNESS_PUBKEYTYPE",
+    "EVAL_FALSE",
+    "P2WSH CHECKMULTISIG with compressed keys attempted replay attack with reported forkid, but unset hashtype"
+],
+[
+    [
+        "",
+        "3044022033706aed33b8155d5486df3b9bca8cdd3bd4bdb5436dce46d72cdaba51d22b4002203626e94fe53a178af46624f17315c6931f20a30b103f5e044e1eda0c3fe185c641",
+        "5121038282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f51508210279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f8179852ae",
+        0.00000001
+    ],
+    "0x22 0x002006c24420938f0fa3c1cb2707d867154220dca365cdbfa0dd2a83854730221460",
+    "HASH160 0x14 0x26282aad7c29369d15fed062a778b6100d31a340 EQUAL",
+    "P2SH,WITNESS,WITNESS_PUBKEYTYPE",
+    "EVAL_FALSE",
+    "P2SH(P2WSH) CHECKMULTISIG with compressed keys attempted replay attack with reported forkid, but unset hashtype"
+],
+[
+    [
+        "",
+        "304402204048b7371ab1c544362efb89af0c80154747d665aa4fcfb2edfd2d161e57b42e02207e043748e96637080ffc3acbd4dcc6fee1e58d30f6d1269535f32188e5ddae7341",
+        "5121038282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f51508210279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f8179852ae",
+        0.00000001
+    ],
+    "",
+    "0 0x20 0x06c24420938f0fa3c1cb2707d867154220dca365cdbfa0dd2a83854730221460",
+    "P2SH,WITNESS,WITNESS_PUBKEYTYPE",
+    "EVAL_FALSE",
+    "P2WSH CHECKMULTISIG with compressed keys attempted replay attack with reported forkid, but unset hashtype"
+],
+[
+    [
+        "",
+        "3044022073902ef0b8a554c36c44cc03c1b64df96ce2914ebcf946f5bb36078fd5245cdf02205b148f1ba127065fb8c83a5a9576f2dcd111739788ed4bb3ee08b2bd3860c91c41",
+        "5121038282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f51508210279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f8179852ae",
+        0.00000001
+    ],
+    "0x22 0x002006c24420938f0fa3c1cb2707d867154220dca365cdbfa0dd2a83854730221460",
+    "HASH160 0x14 0x26282aad7c29369d15fed062a778b6100d31a340 EQUAL",
+    "P2SH,WITNESS,WITNESS_PUBKEYTYPE",
+    "EVAL_FALSE",
+    "P2SH(P2WSH) CHECKMULTISIG with compressed keys attempted replay attack with reported forkid, but unset hashtype"
+],
+[
+    [
+        "",
+        "304402202d092ededd1f060609dbf8cb76950634ff42b3e62cf4adb69ab92397b07d742302204ff886f8d0817491a96d1daccdcc820f6feb122ee6230143303100db37dfa79f41",
+        "5121038282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f51508410479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b852ae",
+        0.00000001
+    ],
+    "",
+    "0 0x20 0x08a6665ebfd43b02323423e764e185d98d1587f903b81507dbb69bfc41005efa",
+    "P2SH,WITNESS",
+    "EVAL_FALSE",
+    "P2WSH CHECKMULTISIG with first key uncompressed and signing with the first key attempted replay attack with reported forkid, but unset hashtype"
+],
+[
+    [
+        "",
+        "304402202dd7e91243f2235481ffb626c3b7baf2c859ae3a5a77fb750ef97b99a8125dc002204960de3d3c3ab9496e218ec57e5240e0e10a6f9546316fe240c216d45116d29341",
+        "5121038282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f51508410479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b852ae",
+        0.00000001
+    ],
+    "0x22 0x002008a6665ebfd43b02323423e764e185d98d1587f903b81507dbb69bfc41005efa",
+    "HASH160 0x14 0x6f5ecd4b83b77f3c438f5214eff96454934fc5d1 EQUAL",
+    "P2SH,WITNESS",
+    "EVAL_FALSE",
+    "P2SH(P2WSH) CHECKMULTISIG first key uncompressed and signing with the first key attempted replay attack with reported forkid, but unset hashtype"
+],
+[
+    [
+        "",
+        "304402201e9e6f7deef5b2f21d8223c5189b7d5e82d237c10e97165dd08f547c4e5ce6ed02206796372eb1cc6acb52e13ee2d7f45807780bf96b132cb6697f69434be74b1af941",
+        "5121038282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f51508410479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b852ae",
+        0.00000001
+    ],
+    "",
+    "0 0x20 0x08a6665ebfd43b02323423e764e185d98d1587f903b81507dbb69bfc41005efa",
+    "P2SH,WITNESS",
+    "EVAL_FALSE",
+    "P2WSH CHECKMULTISIG with first key uncompressed and signing with the second key attempted replay attack with reported forkid, but unset hashtype"
+],
+[
+    [
+        "",
+        "3044022045e667f3f0f3147b95597a24babe9afecea1f649fd23637dfa7ed7e9f3ac18440220295748e81005231135289fe3a88338dabba55afa1bdb4478691337009d82b68d41",
+        "5121038282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f51508410479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b852ae",
+        0.00000001
+    ],
+    "0x22 0x002008a6665ebfd43b02323423e764e185d98d1587f903b81507dbb69bfc41005efa",
+    "HASH160 0x14 0x6f5ecd4b83b77f3c438f5214eff96454934fc5d1 EQUAL",
+    "P2SH,WITNESS",
+    "EVAL_FALSE",
+    "P2SH(P2WSH) CHECKMULTISIG with first key uncompressed and signing with the second key attempted replay attack with reported forkid, but unset hashtype"
+],
+[
+    [
+        "",
+        "3044022046f5367a261fd8f8d7de6eb390491344f8ec2501638fb9a1095a0599a21d3f4c02205c1b3b51d20091c5f1020841bbca87b44ebe25405c64e4acf758f2eae8665f8441",
+        "5141048282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f5150811f8a8098557dfe45e8256e830b60ace62d613ac2f7b17bed31b6eaff6e26caf210279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f8179852ae",
+        0.00000001
+    ],
+    "",
+    "0 0x20 0x230828ed48871f0f362ce9432aa52f620f442cc8d9ce7a8b5e798365595a38bb",
+    "P2SH,WITNESS",
+    "EVAL_FALSE",
+    "P2WSH CHECKMULTISIG with second key uncompressed and signing with the first key attempted replay attack with reported forkid, but unset hashtype"
+],
+[
+    [
+        "",
+        "3044022053e210e4fb1881e6092fd75c3efc5163105599e246ded661c0ee2b5682cc2d6c02203a26b7ada8682a095b84c6d1b881637000b47d761fc837c4cee33555296d63f141",
+        "5141048282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f5150811f8a8098557dfe45e8256e830b60ace62d613ac2f7b17bed31b6eaff6e26caf210279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f8179852ae",
+        0.00000001
+    ],
+    "0x22 0x0020230828ed48871f0f362ce9432aa52f620f442cc8d9ce7a8b5e798365595a38bb",
+    "HASH160 0x14 0x3478e7019ce61a68148f87549579b704cbe4c393 EQUAL",
+    "P2SH,WITNESS",
+    "EVAL_FALSE",
+    "P2SH(P2WSH) CHECKMULTISIG second key uncompressed and signing with the first key attempted replay attack with reported forkid, but unset hashtype"
+],
+[
+    [
+        "",
+        "304402206c6d9f5daf85b54af2a93ec38b15ab27f205dbf5c735365ff12451e43613d1f40220736a44be63423ed5ebf53491618b7cc3d8a5093861908da853739c73717938b741",
+        "5141048282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f5150811f8a8098557dfe45e8256e830b60ace62d613ac2f7b17bed31b6eaff6e26caf210279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f8179852ae",
+        0.00000001
+    ],
+    "",
+    "0 0x20 0x230828ed48871f0f362ce9432aa52f620f442cc8d9ce7a8b5e798365595a38bb",
+    "P2SH,WITNESS",
+    "EVAL_FALSE",
+    "P2WSH CHECKMULTISIG with second key uncompressed and signing with the second key attempted replay attack with reported forkid, but unset hashtype"
+],
+[
+    [
+        "",
+        "30440220687871bc6144012d75baf585bb26ce13997f7d8c626f4d8825b069c3b2d064470220108936fe1c57327764782253e99090b09c203ec400ed35ce9e026ce2ecf842a041",
+        "5141048282263212c609d9ea2a6e3e172de238d8c39cabd5ac1ca10646e23fd5f5150811f8a8098557dfe45e8256e830b60ace62d613ac2f7b17bed31b6eaff6e26caf210279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f8179852ae",
+        0.00000001
+    ],
+    "0x22 0x0020230828ed48871f0f362ce9432aa52f620f442cc8d9ce7a8b5e798365595a38bb",
+    "HASH160 0x14 0x3478e7019ce61a68148f87549579b704cbe4c393 EQUAL",
+    "P2SH,WITNESS",
+    "EVAL_FALSE",
+    "P2SH(P2WSH) CHECKMULTISIG with second key uncompressed and signing with the second key attempted replay attack with reported forkid, but unset hashtype"
+],
+[
+    "0x47 0x3044022003dc803d369048213f19d9633fc17cab899a64154cedff00553eabe786d5d0ce022039baf34079b6d409d6ac5efd139b01a69950e13c716fbb90c4dd2d861b92a4cb41",
     "0x41 0x0479be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798483ada7726a3c4655da4fbfc0e1108a8fd17b448a68554199c47d08ffb10d4b8 CHECKSIG",
     "",
     "OK",
