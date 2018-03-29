@@ -3015,7 +3015,7 @@ UniValue listunspent(const JSONRPCRequest& request)
     std::vector<COutput> vecOutputs;
     LOCK2(cs_main, pwallet->cs_wallet);
 
-    pwallet->AvailableCoins(vecOutputs, !include_unsafe, nullptr, nMinimumAmount, nMaximumAmount, nMinimumSumAmount, nMaximumCount, nMinDepth, nMaxDepth);
+    pwallet->AvailableCoins(vecOutputs, !include_unsafe, nullptr, 0, nMinimumAmount, nMaximumAmount, nMinimumSumAmount, nMaximumCount, nMinDepth, nMaxDepth);
     for (const COutput& out : vecOutputs) {
         CTxDestination address;
         const CScript& scriptPubKey = out.tx->tx->vout[out.i].scriptPubKey;

@@ -310,3 +310,9 @@ void CloseWallets() {
     }
     vpwallets.clear();
 }
+
+void StartMinting(boost::thread_group& threadGroup) {
+    for (CWalletRef pwallet : vpwallets) {
+        MintStake(threadGroup, pwallet);
+    }
+}
